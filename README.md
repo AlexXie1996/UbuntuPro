@@ -1,6 +1,6 @@
 # UbuntuPro
 
-- 重装ｕｂｕｎｔｕ后ｐｙｔｈｏｎ3库的安装全过程
+- 重装ubuntu后python3库的安装全过程
 
 ## 说明
 
@@ -9,5 +9,7 @@
    + python3.6
    + jupyter
    + numpy+scipy
-   + tensorflow(CPU版)(源码编译)
+   + tensorflow
+   + gensim
+   + wxpyhon
    + 所有过程中依赖的库
