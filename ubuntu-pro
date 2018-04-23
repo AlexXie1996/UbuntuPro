@@ -64,7 +64,7 @@ traitlets==4.0.0
 // install sqlite3
 11. sudo apt-get install libsqlite3-dev
 12. sudo apt-get install sqlite3
-12-5. *make python
+12-5. *make python（6-8）
 
 // install Pillow
 13. sudo apt-get install libtiff5-dev libjpeg8-dev zlib1g-dev \
