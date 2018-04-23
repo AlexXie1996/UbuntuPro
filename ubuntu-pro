@@ -6,14 +6,18 @@
 3. sudo apt-get install openssl
 4. sudo apt-get install libssl-dev
 
+// install sqlite3
+5. sudo apt-get install libsqlite3-dev
+6. sudo apt-get install sqlite3
+
 // download python3 & pip3
-5. download python3.6.3
-6. ./configure --with-ssl
-7. make
-8. sudo make install
+7. download python3.6.3
+8. ./configure --prefix=/usr/local/python3.6.1 --enable-shared --with-ssl
+9. make
+10. sudo make install
 
 // download python lib
-9. pip3 install -r requirements.txt
+11. pip3 install -r requirements.txt
 // requirements.txt:
 Cython==0.23.4
 Jinja2==2.8
@@ -59,12 +63,7 @@ tornado==4.3
 traitlets==4.0.0
 
 // install numpy+scipy
-10. sudo pip3 install numpy scipy matplotlib ipython jupyter pandas sympy nose
-
-// install sqlite3
-11. sudo apt-get install libsqlite3-dev
-12. sudo apt-get install sqlite3
-12-5. *make python（6-8）
+12. sudo pip3 install numpy scipy matplotlib ipython jupyter pandas sympy nose
 
 // install Pillow
 13. sudo apt-get install libtiff5-dev libjpeg8-dev zlib1g-dev \
@@ -89,24 +88,13 @@ traitlets==4.0.0
 23. sudo pip3 install wheel
 
 // install tensorflow
-24. sudo apt install git
-25. git clone --recurse-submodules https://github.com/tensorflow/tensorflow
-26. ./configure
+24. sudo pip3 install tensorflow
 
-    - jemalloc y
-    - Google Cloud n
-    - Hadoop File System n
-    - XLA n
-    - VERBS n
-    - OpenCL n
-    - CUDA n
+// install keras
+25. sudo pip3 install keras
 
-27. sudo apt-get install python3-numpy swig python3-dev python3-wheel
-28. sudo apt-get install python3-setuptools
-28. bazel build -c opt --copt=-mavx --copt=-mavx2 --copt=-mfma --copt=-mfpmath=both --copt=-msse4.2 -k //tensorflow/tools/pip_package:build_pip_package
-29. bazel-bin/tensorflow/tools/pip_package/build_pip_package /tmp/tensorflow_pkg
-30. sudo pip3 install /tmp/tensorflow_pkg/XXX.whl
-
-// now you can use tensorflow
+// install wxpython
+26. sudo pip3 install -U -f https://extras.wxpython.org/wxPython4/extras/linux/gtk3/ubuntu-16.04 wxPython
+27. sudo cp xxx/libpythonXXXm.so.1.0 /usr/lib
 
 
